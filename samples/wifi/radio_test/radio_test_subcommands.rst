@@ -142,10 +142,15 @@ Wi-Fi radio test subcommands
      - Configuration
      - Configure the location of resource unit (RU) in 20 MHz spectrum.
    * - rx_capture_length
-     - | <val> (Min: 0, Max: 16384)
+     - | <val> (Min: 0, Max: 16383)
      - 0
      - Configuration
      - Number of RX samples to be captured.
+   * - rx_capture_timeout
+     - | <val> (Min: 0, Max: 600)
+     - 0
+     - Configuration
+     - Duration of Packet detection, If no packets are detected the command will timeout.
    * - rx_lna_gain
      - | 0 = 24 dB
        | 1 = 18 dB
